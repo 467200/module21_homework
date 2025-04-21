@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px; 
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 80%; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Стили для списка задач */
+ul {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+li {
+  padding: 8px;
+  font-size: 16px;
+}
+
+li.completed {
+  color: black; 
+  text-decoration: line-through;
+  text-decoration-color: red; 
+  text-decoration-thickness: 1px; 
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+/* Убираю точку списка перед сообщением*/
+#taskList li[style*="color:red"] {
+  list-style: none;
+  margin-left: 70px;
+}
+
